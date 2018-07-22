@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>{{config('APP_NAME', 'Todolist')}}</title>
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-
+    @include('inc.navbar')
     <div class="container mt-3">
+        @include('inc.messages')
         @yield('content')
     </div>
 
